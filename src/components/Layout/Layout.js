@@ -1,17 +1,14 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
-import Classes from './Layout.css';
+import classes from './Layout.css';
 
-const layout = (props) => {
-        return(
-            <Auxi>
-                <div> Toolbox , Sidedrawer, Backdrop </div>
-                 <main className="content"> 
-                    {props.children}
-                </main>
-            </Auxi>
-        );
-}
+const layout = ( props ) => (
+    <Auxi>
+        <div>Toolbar, SideDrawer, Backdrop</div>
+        <main className={classes.Content}>
+            {props.children}
+        </main>
+    </Auxi>
+);
 
-export default layout ;
-
+export default layout;
