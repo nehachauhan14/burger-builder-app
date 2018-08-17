@@ -93,7 +93,6 @@ class BurgerBuilder extends Component{
         disabledInfo[key] = disabledInfo[key] <= 0 ;
         }
         console.log(`testing len : ${this.state.ingredients}`);
-        debugger;
         return(
         <Auxi>
             <Modal 
